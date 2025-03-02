@@ -37,9 +37,9 @@
 </form>
 
 <h2>Active posts</h2>
-<% matching_posts = Post.where({ :board_id => @the_board_id}).order({ :expires_on => :asc})%>
+<% matching_posts = Post.where({ :board_id => @the_board.id}).order({ :expires_on => :asc})%>
 
-<table boarder = "1">
+<table border = "1">
 <tr>
   <th>Title</th>
   <th>Body</th>
